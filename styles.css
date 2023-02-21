@@ -1,4 +1,65 @@
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar-hero {
+    width: 33%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-image: url(images/background_img_side-bar.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: auto 0;
+    padding: 20px 0;
+
+    font-family: 'Merienda', 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+
+    color: #FEFDFB;
+    background: rgba(0,0,0,0.5);
+}
+
+.logo img {
+    --logo-img-dim: 90px;
+    display: inline-block;
+    width: var(--logo-img-dim);
+    height: var(--logo-img-dim);
+}
+
+.credits {
+    font-family: monospace;
+    font-size: 0.8rem;
+
+    margin-top: 150px;
+    padding-bottom: 10px;
+
     color: white;
-    background-color: blue;
+}
+
+.credits a {
+    color: white;
 }
