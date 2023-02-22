@@ -67,6 +67,10 @@ body {
 main {
     width: 100%;
     height: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    letter-spacing: 0.30px;
 }
 
 main > div {
@@ -79,7 +83,9 @@ main > div:nth-child(odd){
 }
 
 main > div:nth-child(2) {
+    position: relative;
     height: 38%;
+    box-shadow: 0px 3px 5px #b9b9b9;
 }
 
 .intro {
@@ -91,6 +97,10 @@ main > div:nth-child(2) {
     padding: 0 30px;
     padding-top: 75px;
 
+}
+
+.intro p:first-of-type {
+    line-height: 1.25rem;
 }
 
 .user-info {
@@ -111,12 +121,45 @@ form {
 .form-row {
     display: flex;
     justify-content: flex-start;
-    gap: 100px;
+    gap: 80px;
 }
 
 label,
 input {
     display: block;
+}
+
+label {
+    font-size: 0.75rem;
+    color: #777777;
+    margin-bottom: 3px;
+}
+
+input {
+    width: 200px;
+    padding: 4px 8px;
+
+    border-color: #E5E7EB;
+    border-width: 0.75px;
+    border-radius: 2px;
+
+    background-color: #FEFDFB;
+
+}
+
+input:focus {
+    outline: none !important;
+    border-width: 1px;
+    border-color: blue;
+    box-shadow: 3px 3px 5px #cecece;
+}
+
+input:not(:placeholder-shown) {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
 }
 
 .sign-up-confirm {
@@ -125,10 +168,27 @@ input {
 }
 
 .sign-up-confirm > button {
-    margin-bottom: 15px;
+    padding: 10px 40px;
+    margin-bottom: 25px;
+
+    border: none;
+    border-radius: 10px;
+
+    box-shadow: 0px 3px 3px #b9b9b9;
+
+    font-size: 1rem;
+
+    color: #FEFDFB;
+    background-color: #596D48;
+
+}
+
+.sign-up-confirm > p {
+    font-weight: 100;
+    font-size: 0.75rem;
 }
 
 .sign-up-confirm > p > a {
     text-decoration: none;
-    color: black;
+    color: #596D48;
 }
