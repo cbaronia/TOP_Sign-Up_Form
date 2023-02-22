@@ -118,3 +118,17 @@ label,
 input {
     display: block;
 }
+
+.sign-up-confirm {
+    padding: 0 30px;
+    padding-top: 35px;
+}
+
+.sign-up-confirm > button {
+    margin-bottom: 15px;
+}
+
+.sign-up-confirm > p > a {
+    text-decoration: none;
+    color: black;
+}
