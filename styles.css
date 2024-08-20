@@ -25,9 +25,19 @@ html {
   }
 /*---------------------------*/
 
+@font-face {
+  font-family: Norse-Bold;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
 h1{
-    background-color: green;
-    color: white;
-    font-size: 128px;
-    text-align: center;
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 128px;
+  font-family: Norse-Bold, sans-serif;
+}
+
+.logo{
+  background-color: green;
 }
