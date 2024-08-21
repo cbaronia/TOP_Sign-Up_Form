@@ -30,14 +30,12 @@ html {
   src: url(./fonts/Norse-Bold.otf);
 }
 
-h1{
-  background-color: green;
-  color: white;
-  text-align: center;
-  font-size: 128px;
-  font-family: Norse-Bold, sans-serif;
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
 }
 
-.logo{
-  background-color: green;
+.side-bar {
+  width: 34%;
 }
