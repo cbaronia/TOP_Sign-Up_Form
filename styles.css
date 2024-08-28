@@ -89,7 +89,7 @@ label {
 }
 
 .description {
-  background-color: lightgray;
+  background-color: rgb(238, 235, 235);
   height: 33%;
   display: flex;
   flex-direction: column;
@@ -103,6 +103,7 @@ label {
 
 .form-section {
   padding: 24px 0px 50px 50px;
+  box-shadow: 0px 4px 4px #E5E7EB;
 }
 
 .form-section > p {
@@ -141,6 +142,20 @@ label {
   outline: none;
   border: 1px solid rgb(113, 195, 247);
   box-shadow: 4px 4px 4px #E5E7EB;
+}
+
+.password-field + p {
+  color: red;
+  font-size: 0.75rem;
+  visibility: hidden;
+}
+
+.password-field:invalid {
+  border: 1px solid red;
+}
+
+.password-field:invalid + p {
+  visibility: visible;
 }
 
 .end-section {
